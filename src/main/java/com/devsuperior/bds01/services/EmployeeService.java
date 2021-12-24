@@ -18,8 +18,8 @@ public class EmployeeService {
 	@Autowired
 	private EmployeeRepository repository;
 	
-	@Autowired
-	private DepartmentRepository departmentRepository;
+//	@Autowired
+//	private DepartmentRepository departmentRepository;
 	
 	@Transactional(readOnly = true)
 	public Page<EmployeeDTO> findAllPaged(Pageable pageable) {
